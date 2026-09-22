@@ -30,7 +30,7 @@
 - 🐧 **Linux Setup**: Daily driving **Arch Linux** with **Hyprland**. Comfortable working in the terminal, shell commands, and Git.
 - 🔌 **Hardware & SBCs**: Enjoy tinkering with single-board computers and microcontrollers like **Raspberry Pi**, **ESP32**, and basic sensors.
 - ⚡ **How I Learn**: I like learning by doing. I leverage modern AI tooling, documentation, and hands-on experimentation to solve problems, write code, and pick up new concepts fast.
-- 🎯 **Goals**: Building a strong foundation in programming, exploring systems from hardware to software, and understanding AI/LLM technologies.
+- 🎯 **Core Interest**: Deeply curious about how to train and build LLMs from the ground up, and learning how to make models more efficient (quantization, fine-tuning, and optimizing inference).
 
 ---
 
@@ -39,7 +39,7 @@
 - **Operating Systems & Environment**: Arch Linux, Hyprland, Bash / CLI, Git & GitHub
 - **Hardware & IoT**: Raspberry Pi, ESP32, Arduino, sensors & DIY electronics
 - **Programming & Software**: Python (foundations), exploring C/C++ and basic web markup
-- **AI & Workflow**: Using AI tools and local models (Ollama) to learn, research, and accelerate development
+- **AI & ML Exploration**: Running local models (Ollama); eager to learn LLM training pipelines, fine-tuning, and model optimization
 
 ---
 
