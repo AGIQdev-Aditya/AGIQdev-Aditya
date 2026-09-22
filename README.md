@@ -38,16 +38,16 @@
 
 - **Operating Systems & Environment**: Arch Linux, Hyprland, Bash / CLI, Git & GitHub
 - **Hardware & IoT**: Raspberry Pi, ESP32, Arduino, sensors & DIY electronics
-- **Programming & Software**: Python (foundations), exploring C/C++ and basic web markup
+- **Programming**: Currently learning beginner Python (syntax, basic logic, and practice scripts)
 - **AI & ML Exploration**: Running local models (Ollama); eager to learn LLM training pipelines, fine-tuning, and model optimization
 
 ---
 
 ## 📂 Projects & Practice
 
-- 🖱️ **[ESP32 Bluetooth Air Mouse](https://github.com/AGIQdev-Aditya/esp32-air-mouse)** — A DIY wireless motion-controlled mouse built with an ESP32 and MPU-6050 sensor to test BLE HID communication.
-- 🐍 **[Python Journey](https://github.com/AGIQdev-Aditya/python-journey)** — My practice repo for learning Python syntax, basic logic, and automation scripts.
-- 🌐 **[HTML Learning](https://github.com/AGIQdev-Aditya/html-learning)** — Simple exercises exploring basic web page structure.
+- 🖱️ **[ESP32 Bluetooth Air Mouse](https://github.com/AGIQdev-Aditya/esp32-air-mouse)** — A DIY wireless motion mouse built with an ESP32 and MPU-6050 sensor (hardware assembled by me; firmware built with AI assistance).
+- 🐍 **[Python Journey](https://github.com/AGIQdev-Aditya/python-journey)** — My beginner practice repo for learning basic Python syntax and simple exercises.
+- 🌐 **[HTML Learning](https://github.com/AGIQdev-Aditya/html-learning)** — Notes and beginner exercises exploring how web pages are structured.
 
 ---
 
