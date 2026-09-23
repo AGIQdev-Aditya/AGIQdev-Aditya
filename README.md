@@ -1,10 +1,20 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=200&section=header&text=Aditya%20Sharma&fontSize=42&fontAlignY=38&desc=1st%20Year%20B.Tech%20CSE%20%7C%20Linux%2C%20Hardware%20%26%20AI%20Enthusiast&descAlignY=55&descSize=16" width="100%" alt="Header" />
+```text
+┌──(aditya㉿omarchy)-[~]
+└─$ fastfetch --config developer-profile.json
 
-<a href="https://github.com/AGIQdev-Aditya">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1000&color=61AFEF&center=true&vCenter=true&width=520&lines=1st+Year+B.Tech+CSE+Student;Exploring+Linux%2C+Hardware+%26+Code;Learning+by+building+%26+tinkering+with+AI;Arch+Linux+%2B+Hyprland+User" alt="Typing SVG" />
-</a>
+       /\         aditya@omarchy
+      /  \        --------------
+     /\   \       User     : Aditya Sharma (1st Year B.Tech CSE @ NIAT)
+    /      \      OS       : Arch Linux (Omarchy) x86_64
+   /   ,,   \     WM       : Hyprland (Wayland)
+  /   |  |  -\    Hardware : Dell Precision 7540 | Raspberry Pi | ESP32 DevKit
+ /_-''    ''-_\   Stack    : Python (Beginner / Learning) | Bash | Git
+                  Core Aim : LLM Training & Model Efficiency (Quantization/Edge)
+                  Workflow : AI-Assisted Prototyping & Rapid Debugging
+                  Uptime   : 24/7 Curiosity & Hands-On Tinkering
+```
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=AGIQdev-Aditya&style=flat-square&color=007ec6&label=PROFILE+VIEWS" alt="Profile Views" />
@@ -14,56 +24,87 @@
 
 ---
 
-### 📌 About Me
+### 🍱 Developer Bento Dossier
 
-- 🎓 **Undergraduate**: 1st Year B.Tech in Computer Science & Engineering.
-- 🐧 **My Setup**: Daily driving **Arch Linux** with **Hyprland**. I love working directly in the terminal, shell scripting, and using Git.
-- 🔌 **Hardware & SBCs**: Passionate about hands-on physical computing — experimenting with **Raspberry Pi**, **ESP32**, sensors, and DIY circuits.
-- ⚡ **How I Learn**: Practical, project-based learner. I use modern AI tools, documentation, and fast iteration to build prototypes, solve bugs, and learn new concepts.
-- 🎯 **Core Interest**: Deeply curious about how LLMs work under the hood, how models are trained, and how to optimize models for efficiency (quantization, edge inference on low-power devices, and fine-tuning).
+<table>
+<tr>
+<td width="50%" valign="top">
+
+#### 🐧 01. Systems & Environment
+```bash
+$ cat ~/.config/system.json
+{
+  "os": "Arch Linux (Hyprland Wayland)",
+  "shell": "Bash & Terminal Utilities",
+  "vcs": "Git & GitHub CLI",
+  "hardware": ["Raspberry Pi", "ESP32", "Sensors"]
+}
+```
+*Daily driving Arch Linux with Hyprland. Comfortable in the terminal, shell navigation, and Git version control.*
+
+</td>
+<td width="50%" valign="top">
+
+#### 🤖 02. The Gen AI Goal
+```python
+class Focus:
+    target = "LLM Training & Efficiency"
+    interests = [
+        "Transformer Architectures",
+        "Model Quantization (Edge AI)",
+        "Local Inference (Ollama)",
+        "Fine-tuning Pipelines"
+    ]
+```
+*Moving beyond end-user chatbot prompts to understand how models are trained, built, and optimized for constrained hardware.*
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+#### ⚡ 03. How I Learn & Build
+- **Tinker First**: I learn best with my hands on hardware and code.
+- **AI-Assisted Velocity**: I leverage modern AI tools and documentation to debug, understand errors, and ship working prototypes fast.
+- **Radical Honesty**: Currently building my foundation in beginner Python. No fake skills, no buzzword stuffing.
+
+</td>
+<td width="50%" valign="top">
+
+#### 🕹️ 04. Projects & Practice
+- 🖱️ **[ESP32 Bluetooth Air Mouse](https://github.com/AGIQdev-Aditya/esp32-air-mouse)**: DIY motion HID *(hardware assembled by me; firmware built with AI assistance)*.
+- 🐍 **[Python Journey](https://github.com/AGIQdev-Aditya/python-journey)**: Daily practice, syntax fundamentals, and logic building.
+- 🌐 **[HTML Learning](https://github.com/AGIQdev-Aditya/html-learning)**: Exploring fundamental web page markup.
+
+</td>
+</tr>
+</table>
 
 ---
 
-### 🛠️ Tools & Technologies I Tinker With
+### 🔌 Hardware Workbench Snapshot
 
-<div align="center">
-
-#### Daily Environment & Workflow
-<a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=linux,arch,bash,git,github,vscode&theme=dark" alt="Environment Icons" />
-</a>
-
+<details>
+<summary><b>🔍 Click to view DIY ESP32 Air Mouse Pinout & Circuit Schematic</b></summary>
 <br/>
 
-#### Hardware & Languages I'm Learning
-<a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=raspberrypi,arduino,py&theme=dark" alt="Hardware and Learning Icons" />
-</a>
+```text
+       +-----------------------------------+
+       |         ESP32 DevKit V1           |
+       |                                   |
+       |  [3V3] ------------ [VCC]         |-----> MPU-6050 6-Axis IMU (I2C)
+       |  [GND] ------------ [GND]         |-----> Common Ground
+       |  [GPIO 22] -------- [SCL]         |-----> I2C Clock Line
+       |  [GPIO 21] -------- [SDA]         |-----> I2C Data Line
+       |  [GPIO 15] -----[ Tactile Button ]+-----> Recalibration / Left Click
+       +-----------------------------------+
+```
 
-</div>
-
-<br/>
-
-| Category | What I'm Doing |
-| :--- | :--- |
-| 🐧 **OS & Desktop** | Arch Linux, Hyprland, Bash / CLI utilities, Git & GitHub |
-| 🔌 **Hardware & SBCs** | Raspberry Pi (single-board computing), ESP32, Arduino, basic sensors |
-| 🐍 **Programming** | Currently learning beginner Python (syntax, logic building, simple scripts) |
-| 🤖 **AI & ML Exploration** | Running local models via Ollama; eager to learn LLM training pipelines and inference optimization |
+</details>
 
 ---
 
-### 📂 Featured Projects & Practice
-
-| Project | Description | Stack / Focus |
-| :--- | :--- | :--- |
-| 🖱️ **[ESP32 Bluetooth Air Mouse](https://github.com/AGIQdev-Aditya/esp32-air-mouse)** | DIY wireless air mouse built with an ESP32 and MPU-6050 sensor to control PC cursor via Bluetooth motion *(hardware assembled by me; firmware with AI assistance)*. | `ESP32` `MPU-6050` `BLE HID` |
-| 🐍 **[Python Journey](https://github.com/AGIQdev-Aditya/python-journey)** | Practice repository documenting daily exercises, Python syntax basics, and logic building scripts. | `Python 3` `Beginner` |
-| 🌐 **[HTML Learning](https://github.com/AGIQdev-Aditya/html-learning)** | Notes and playground files exploring semantic tags and fundamental web page structure. | `HTML5` `Web Basics` |
-
----
-
-### 📊 GitHub Activity & Stats
+### 📊 GitHub Activity
 
 <div align="center">
   <img src="https://github-readme-stats-anuraghazra1.vercel.app/api?username=AGIQdev-Aditya&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="Aditya's GitHub Stats" />
@@ -73,19 +114,16 @@
 
 ---
 
-### 📬 Connect With Me
+### 📬 Contact Terminal
 
-<div align="center">
-
-[![GitHub](https://img.shields.io/badge/GitHub-AGIQdev--Aditya-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AGIQdev-Aditya)
-[![Personal Email](https://img.shields.io/badge/Personal_Email-adityasharma8ti%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:adityasharma8ti@gmail.com)
-[![Dev Email](https://img.shields.io/badge/Dev_Email-agiq.dev%40gmail.com-0078D4?style=for-the-badge&logo=gmail&logoColor=white)](mailto:agiq.dev@gmail.com)
-
-</div>
-
-<br/>
-
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=100&section=footer" width="100%" alt="Footer" />
-</div>
+```bash
+┌──(aditya㉿omarchy)-[~/contact]
+└─$ ./reach_me.sh --output
+============================================================
+  Identity  : Aditya Sharma
+  GitHub    : https://github.com/AGIQdev-Aditya
+  Personal  : adityasharma8ti@gmail.com
+  Dev Email : agiq.dev@gmail.com
+============================================================
+```
 
