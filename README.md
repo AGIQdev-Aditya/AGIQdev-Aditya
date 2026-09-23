@@ -64,12 +64,66 @@
 
 ---
 
-### 📊 GitHub Activity
+### 🎮 Interactive Corner (Click to Expand!)
+
+<details>
+<summary><b>🎲 Click to Play: Quick 3-Question Tech Trivia</b></summary>
+<br/>
+
+> **Q1: Which sensor detects wrist tilt in my DIY Air Mouse?**
+> <details>
+> <summary>👉 <i>Click to reveal answer</i></summary>
+> <b>Answer:</b> The <b>MPU-6050</b> (6-axis accelerometer & gyroscope communicating via I2C)!
+> </details>
+
+<br/>
+
+> **Q2: Which window manager do I daily-drive on Arch Linux?**
+> <details>
+> <summary>👉 <i>Click to reveal answer</i></summary>
+> <b>Answer:</b> <b>Hyprland</b> on Wayland — dynamic tiling with fluid animations!
+> </details>
+
+<br/>
+
+> **Q3: What am I most excited to learn in the Generative AI Club?**
+> <details>
+> <summary>👉 <i>Click to reveal answer</i></summary>
+> <b>Answer:</b> Understanding <b>LLM training pipelines</b> from first principles, transformer architectures, and optimizing models for edge hardware!
+> </details>
+
+</details>
+
+<br/>
+
+<details>
+<summary><b>🔌 Click to inspect the ESP32 Air Mouse Circuit Schematic</b></summary>
+<br/>
+
+```text
+       +-----------------------------------+
+       |         ESP32 DevKit V1           |
+       |                                   |
+       |  [3V3] ------------ [VCC]         |-----> MPU-6050 6-Axis IMU (I2C)
+       |  [GND] ------------ [GND]         |-----> Common Ground
+       |  [GPIO 22] -------- [SCL]         |-----> I2C Clock Line
+       |  [GPIO 21] -------- [SDA]         |-----> I2C Data Line
+       |  [GPIO 15] -----[ Tactile Button ]+-----> Recalibration / Left Click
+       +-----------------------------------+
+```
+
+</details>
+
+---
+
+### 📊 GitHub Activity & Fun
 
 <div align="center">
   <img src="https://github-readme-stats-anuraghazra1.vercel.app/api?username=AGIQdev-Aditya&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="Aditya's GitHub Stats" />
   <br/><br/>
   <img src="https://streak-stats.demolab.com?user=AGIQdev-Aditya&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
+  <br/><br/>
+  <img src="https://readme-jokes.vercel.app/api?theme=tokyonight&hideBorder=true" alt="Daily Programmer Joke" />
 </div>
 
 ---
