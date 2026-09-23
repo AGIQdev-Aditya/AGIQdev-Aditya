@@ -1,24 +1,39 @@
 <div align="center">
 
-# Hey there, I'm Aditya Sharma! 👋
+# 🚀 Welcome to Aditya's Dev Space!
 
 <a href="https://github.com/AGIQdev-Aditya">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=1000&color=00B4D8&center=true&vCenter=true&width=580&lines=1st+Year+B.Tech+CSE+Student;Curious+Tinkerer+%26+Fast+Learner;Exploring+Hardware%2C+Python+%26+Modern+AI;Building+Projects+Hands-On!" alt="Typing SVG" />
 </a>
 
 <p align="center">
-  <a href="#-interactive-zone-play-a-game"><b>🎮 Play Game</b></a> •
-  <a href="#-about-me"><b>✨ About Me</b></a> •
-  <a href="#-projects--experiments"><b>🚀 Projects</b></a> •
-  <a href="#-tools--technologies"><b>🛠️ Tech Stack</b></a> •
-  <a href="#-lets-connect"><b>📬 Contact</b></a>
-</p>
-
-<p align="center">
   <img src="https://komarev.com/ghpvc/?username=AGIQdev-Aditya&style=flat-square&color=00B4D8&label=PROFILE+VIEWS" alt="Profile Views" />
 </p>
 
 </div>
+
+---
+
+<table>
+<tr>
+<td width="55%" valign="middle">
+
+### ✨ About Me
+
+- 🎓 **Undergraduate**: 1st Year B.Tech Computer Science & Engineering @ NIAT.
+- 🐧 **My Daily Driver**: Running **Arch Linux** with **Hyprland** (Wayland) — comfortable inside the terminal and using Git.
+- 🔌 **Hardware Tinkering**: Experimenting with **Raspberry Pi**, **ESP32**, and sensors.
+- ⚡ **How I Learn**: Hands-on project builder. I use modern AI tools and docs to rapidly prototype, debug, and learn.
+- 🎯 **What I'm Aiming For**: Building strong programming fundamentals, exploring LLM training pipelines, and optimizing models for edge hardware.
+
+</td>
+<td width="45%" align="center" valign="middle">
+
+<img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="340" alt="Developer Coding Animation" />
+
+</td>
+</tr>
+</table>
 
 ---
 
@@ -91,16 +106,6 @@
 </td>
 </tr>
 </table>
-
----
-
-### ✨ About Me
-
-- 🎓 **Undergraduate**: 1st Year B.Tech in Computer Science & Engineering @ NIAT.
-- ⚡ **How I Learn**: Practical, project-based learner. I use modern AI tools, documentation, and hands-on tinkering to build prototypes, solve bugs, and learn new concepts quickly.
-- 🐧 **My Daily Driver**: Daily driving **Arch Linux** with **Hyprland** — comfortable navigating the terminal and using Git for my code.
-- 🔌 **Hardware Tinkering**: Passionate about physical computing — experimenting with **Raspberry Pi**, **ESP32**, sensors, and DIY circuits.
-- 🎯 **What I'm Aiming For**: Eager to build solid programming fundamentals in Python, explore how LLMs and transformers work under the hood, and learn model training and efficiency.
 
 ---
 
