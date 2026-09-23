@@ -1,8 +1,9 @@
-<div align="center">
+<div align="right">
+  <img src="https://komarev.com/ghpvc/?username=AGIQdev-Aditya&style=flat-square&color=007ec6&label=PROFILE+VIEWS" alt="Profile Views" />
+</div>
 
-```text
-┌──(aditya㉿omarchy)-[~]
-└─$ fastfetch --config developer-profile.json
+```console
+aditya@omarchy:~$ fastfetch --config profile.json
 
        /\         aditya@omarchy
       /  \        --------------
@@ -11,16 +12,10 @@
    /   ,,   \     WM       : Hyprland (Wayland)
   /   |  |  -\    Hardware : Dell Precision 7540 | Raspberry Pi | ESP32 DevKit
  /_-''    ''-_\   Stack    : Python (Beginner / Learning) | Bash | Git
-                  Core Aim : LLM Training & Model Efficiency (Quantization/Edge)
+                  Core Aim : LLM Training & Model Efficiency (Edge/Quantization)
                   Workflow : AI-Assisted Prototyping & Rapid Debugging
                   Uptime   : 24/7 Curiosity & Hands-On Tinkering
 ```
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=AGIQdev-Aditya&style=flat-square&color=007ec6&label=PROFILE+VIEWS" alt="Profile Views" />
-</p>
-
-</div>
 
 ---
 
