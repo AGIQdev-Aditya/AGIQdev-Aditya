@@ -17,6 +17,14 @@ aditya@omarchy:~$ fastfetch --config profile.json
                   Uptime   : 24/7 Curiosity & Hands-On Tinkering
 ```
 
+<div align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=15&duration=2500&pause=1000&color=61AFEF&center=true&vCenter=true&width=550&lines=%24+ollama+run+llama3.1%3A8b;%24+python3+-m+learning.journey;%24+git+commit+-m+%221st+Year+B.Tech+CSE%22;%24+ping+-c+1+raspberrypi.local;%24+echo+%22Building+with+ESP32+%26+Linux%22" alt="Live Terminal Typing" />
+</div>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="400" alt="Pixel Art Coding Terminal Animation" />
+</p>
+
 ---
 
 ### 🍱 Developer Bento Dossier
