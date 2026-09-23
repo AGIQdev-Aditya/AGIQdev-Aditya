@@ -163,15 +163,28 @@
 
 ---
 
-### 📊 GitHub Activity & Daily Joke
+### 📊 GitHub Activity & Insights
 
+<table width="100%">
+<tr>
+<td width="50%" align="center" valign="middle">
+  <img src="https://github-readme-stats-anuraghazra1.vercel.app/api?username=AGIQdev-Aditya&show_icons=true&theme=tokyonight&hide_border=true&title_color=00B4D8&icon_color=00B4D8&text_color=94A3B8" alt="GitHub Stats" width="100%" />
+</td>
+<td width="50%" align="center" valign="middle">
+  <img src="https://streak-stats.demolab.com?user=AGIQdev-Aditya&theme=tokyonight&hide_border=true&stroke=00B4D8&ring=00B4D8&fire=00B4D8&currStreakLabel=00B4D8" alt="GitHub Streak" width="100%" />
+</td>
+</tr>
+</table>
+
+<br/>
+
+<details>
+<summary><b>☕ Developer Coffee Break (Click to reveal today's programming joke!)</b></summary>
+<br/>
 <div align="center">
-  <img src="https://github-readme-stats-anuraghazra1.vercel.app/api?username=AGIQdev-Aditya&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="Aditya's GitHub Stats" />
-  <br/><br/>
-  <img src="https://streak-stats.demolab.com?user=AGIQdev-Aditya&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
-  <br/><br/>
-  <img src="https://readme-jokes.vercel.app/api?theme=tokyonight&hideBorder=true" alt="Daily Programmer Joke" />
+  <img src="https://readme-jokes.vercel.app/api?theme=tokyonight&hideBorder=true" alt="Daily Programmer Joke" width="480" />
 </div>
+</details>
 
 ---
 
