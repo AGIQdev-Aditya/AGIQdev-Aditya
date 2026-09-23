@@ -6,17 +6,91 @@
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=1000&color=00B4D8&center=true&vCenter=true&width=580&lines=1st+Year+B.Tech+CSE+Student;Curious+Tinkerer+%26+Fast+Learner;Exploring+Hardware%2C+Python+%26+Modern+AI;Building+Projects+Hands-On!" alt="Typing SVG" />
 </a>
 
-<br/><br/>
-
-<img src="https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif" width="720" alt="Cozy Lofi Developer Desk Animation" />
-
-<br/>
+<p align="center">
+  <a href="#-interactive-zone-play-a-game"><b>🎮 Play Game</b></a> •
+  <a href="#-about-me"><b>✨ About Me</b></a> •
+  <a href="#-projects--experiments"><b>🚀 Projects</b></a> •
+  <a href="#-tools--technologies"><b>🛠️ Tech Stack</b></a> •
+  <a href="#-lets-connect"><b>📬 Contact</b></a>
+</p>
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=AGIQdev-Aditya&style=flat-square&color=00B4D8&label=PROFILE+VIEWS" alt="Profile Views" />
 </p>
 
 </div>
+
+---
+
+### 🎮 Interactive Zone (Play a Game!)
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+#### ✊ Play Rock, Paper, Scissors!
+*Click any move to play against my bot:*
+
+<details>
+<summary><b>✊ Throw Rock</b></summary>
+<br/>
+<blockquote>
+🤖 <b>Aditya Bot:</b> ✋ Paper!<br/>
+<i>Paper covers rock — I win this round! Rematch? 😄</i>
+</blockquote>
+</details>
+
+<details>
+<summary><b>✋ Throw Paper</b></summary>
+<br/>
+<blockquote>
+🤖 <b>Aditya Bot:</b> ✌️ Scissors!<br/>
+<i>Scissors cuts paper! Good game, try again! ✂️</i>
+</blockquote>
+</details>
+
+<details>
+<summary><b>✌️ Throw Scissors</b></summary>
+<br/>
+<blockquote>
+🤖 <b>Aditya Bot:</b> ✊ Rock!<br/>
+<i>Rock crushes scissors! Better luck next time! 💥</i>
+</blockquote>
+</details>
+
+</td>
+<td width="50%" valign="top">
+
+#### 💡 Quick Tech Trivia
+*Test your knowledge on my tech setup:*
+
+<details>
+<summary><b>Q: What sensor tracks wrist tilt in my Air Mouse?</b></summary>
+<br/>
+<blockquote>
+<b>Answer:</b> The <b>MPU-6050</b> (6-axis gyro & accelerometer over I2C)!
+</blockquote>
+</details>
+
+<details>
+<summary><b>Q: What OS & window manager do I daily-drive?</b></summary>
+<br/>
+<blockquote>
+<b>Answer:</b> <b>Arch Linux</b> with <b>Hyprland</b> (Wayland)!
+</blockquote>
+</details>
+
+<details>
+<summary><b>Q: What is my main goal in the Gen AI Club?</b></summary>
+<br/>
+<blockquote>
+<b>Answer:</b> Learning <b>LLM training pipelines</b> & model efficiency for edge devices!
+</blockquote>
+</details>
+
+</td>
+</tr>
+</table>
 
 ---
 
@@ -30,7 +104,40 @@
 
 ---
 
-### 🛠️ Tools & Technologies I Tinker With
+### 🚀 Projects & Experiments
+
+- 🖱️ **[ESP32 Bluetooth Air Mouse](https://github.com/AGIQdev-Aditya/esp32-air-mouse)**  
+  A DIY wireless mouse controlled by hand and wrist motion. I assembled the circuit with an ESP32 and MPU-6050 sensor, using AI-assisted programming to get the Bluetooth BLE connection and cursor smoothing working.
+
+<details>
+<summary><b>🔌 Click to inspect the ESP32 Air Mouse Circuit Schematic</b></summary>
+<br/>
+
+```text
+       +-----------------------------------+
+       |         ESP32 DevKit V1           |
+       |                                   |
+       |  [3V3] ------------ [VCC]         |-----> MPU-6050 6-Axis IMU (I2C)
+       |  [GND] ------------ [GND]         |-----> Common Ground
+       |  [GPIO 22] -------- [SCL]         |-----> I2C Clock Line
+       |  [GPIO 21] -------- [SDA]         |-----> I2C Data Line
+       |  [GPIO 15] -----[ Tactile Button ]+-----> Recalibration / Left Click
+       +-----------------------------------+
+```
+
+</details>
+
+<br/>
+
+- 🐍 **[Python Journey](https://github.com/AGIQdev-Aditya/python-journey)**  
+  My daily practice repository where I experiment with Python basics, syntax, and logic building exercises.
+
+- 🌐 **[HTML Learning](https://github.com/AGIQdev-Aditya/html-learning)**  
+  Beginner notes and playground files exploring semantic tags and fundamental web page structure.
+
+---
+
+### 🛠️ Tools & Technologies
 
 <div align="center">
 
@@ -51,72 +158,7 @@
 
 ---
 
-### 🚀 Projects & Experiments
-
-- 🖱️ **[ESP32 Bluetooth Air Mouse](https://github.com/AGIQdev-Aditya/esp32-air-mouse)**  
-  A DIY wireless mouse controlled by hand and wrist motion. I assembled the circuit with an ESP32 and MPU-6050 sensor, using AI-assisted programming to get the Bluetooth BLE connection and cursor smoothing working.
-
-- 🐍 **[Python Journey](https://github.com/AGIQdev-Aditya/python-journey)**  
-  My daily practice repository where I experiment with Python basics, syntax, and logic building exercises.
-
-- 🌐 **[HTML Learning](https://github.com/AGIQdev-Aditya/html-learning)**  
-  Beginner notes and playground files exploring semantic tags and fundamental web page structure.
-
----
-
-### 🎮 Interactive Corner (Click to Expand!)
-
-<details>
-<summary><b>🎲 Click to Play: Quick 3-Question Tech Trivia</b></summary>
-<br/>
-
-> **Q1: Which sensor detects wrist tilt in my DIY Air Mouse?**
-> <details>
-> <summary>👉 <i>Click to reveal answer</i></summary>
-> <b>Answer:</b> The <b>MPU-6050</b> (6-axis accelerometer & gyroscope communicating via I2C)!
-> </details>
-
-<br/>
-
-> **Q2: Which window manager do I daily-drive on Arch Linux?**
-> <details>
-> <summary>👉 <i>Click to reveal answer</i></summary>
-> <b>Answer:</b> <b>Hyprland</b> on Wayland — dynamic tiling with fluid animations!
-> </details>
-
-<br/>
-
-> **Q3: What am I most excited to learn in the Generative AI Club?**
-> <details>
-> <summary>👉 <i>Click to reveal answer</i></summary>
-> <b>Answer:</b> Understanding <b>LLM training pipelines</b> from first principles, transformer architectures, and optimizing models for edge hardware!
-> </details>
-
-</details>
-
-<br/>
-
-<details>
-<summary><b>🔌 Click to inspect the ESP32 Air Mouse Circuit Schematic</b></summary>
-<br/>
-
-```text
-       +-----------------------------------+
-       |         ESP32 DevKit V1           |
-       |                                   |
-       |  [3V3] ------------ [VCC]         |-----> MPU-6050 6-Axis IMU (I2C)
-       |  [GND] ------------ [GND]         |-----> Common Ground
-       |  [GPIO 22] -------- [SCL]         |-----> I2C Clock Line
-       |  [GPIO 21] -------- [SDA]         |-----> I2C Data Line
-       |  [GPIO 15] -----[ Tactile Button ]+-----> Recalibration / Left Click
-       +-----------------------------------+
-```
-
-</details>
-
----
-
-### 📊 GitHub Activity & Fun
+### 📊 GitHub Activity & Daily Joke
 
 <div align="center">
   <img src="https://github-readme-stats-anuraghazra1.vercel.app/api?username=AGIQdev-Aditya&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="Aditya's GitHub Stats" />
@@ -137,4 +179,3 @@
 [![Dev Email](https://img.shields.io/badge/Dev_Email-agiq.dev%40gmail.com-0078D4?style=for-the-badge&logo=gmail&logoColor=white)](mailto:agiq.dev@gmail.com)
 
 </div>
-
