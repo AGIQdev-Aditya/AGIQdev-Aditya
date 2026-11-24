@@ -1,0 +1,218 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" width="100%" height="100%">
+  <defs>
+    <!-- Dark Matte PCB Gradients -->
+    <linearGradient id="pcbGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+
+    <!-- Metallic Shield Can Gradient -->
+    <linearGradient id="metalShield" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#94a3b8" />
+      <stop offset="40%" stop-color="#cbd5e1" />
+      <stop offset="70%" stop-color="#64748b" />
+      <stop offset="100%" stop-color="#475569" />
+    </linearGradient>
+
+    <!-- Gold / Copper Trace Gradient -->
+    <linearGradient id="copperTrace" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="50%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+
+    <!-- MPU6050 Blue Breakout PCB -->
+    <linearGradient id="mpuPcb" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a" />
+      <stop offset="100%" stop-color="#172554" />
+    </linearGradient>
+
+    <!-- Glow Filters -->
+    <filter id="ledGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="traceGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes blinkLedBlue {
+      0%, 100% { fill: #0284c7; filter: drop-shadow(0 0 1px #38bdf8); }
+      50% { fill: #38bdf8; filter: drop-shadow(0 0 8px #00f2fe); }
+    }
+
+    @keyframes pulseSignal {
+      0% { stroke-dashoffset: 120; opacity: 0.2; }
+      50% { opacity: 1; }
+      100% { stroke-dashoffset: 0; opacity: 0.2; }
+    }
+
+    .fira-mono {
+      font-family: 'Fira Code', 'SF Mono', Consolas, monospace;
+    }
+
+    .led-active {
+      animation: blinkLedBlue 1.2s infinite ease-in-out;
+    }
+
+    .signal-pulse {
+      stroke: #38bdf8;
+      stroke-width: 2.5;
+      stroke-dasharray: 20, 80;
+      fill: none;
+      filter: url(#traceGlow);
+      animation: pulseSignal 2s linear infinite;
+    }
+  </style>
+
+  <!-- Background Base Canvas -->
+  <rect width="900" height="360" rx="14" fill="#080c14" stroke="#1e293b" stroke-width="1.2" />
+
+  <!-- Grid Guide -->
+  <g opacity="0.15">
+    <path d="M 0 60 L 900 60 M 0 120 L 900 120 M 0 180 L 900 180 M 0 240 L 900 240 M 0 300 L 900 300" stroke="#475569" stroke-width="0.8" />
+    <path d="M 150 0 L 150 360 M 300 0 L 300 360 M 450 0 L 450 360 M 600 0 L 600 360 M 750 0 L 750 360" stroke="#475569" stroke-width="0.8" />
+  </g>
+
+  <!-- ========================================================
+       MODULE 1: ESP32 DEVKIT V1 (ISOMETRIC / ANGLE VIEW)
+       ======================================================== -->
+  <g transform="translate(80, 50)">
+    <!-- PCB Board Main Substrate -->
+    <path d="M 90 20 L 350 20 L 290 240 L 30 240 Z" fill="url(#pcbGrad)" stroke="#334155" stroke-width="2" />
+
+    <!-- Gold Plated PCB Edge Connectors (Left Pin Header) -->
+    <g fill="#f59e0b" opacity="0.9">
+      <circle cx="55" cy="225" r="3.5" /><circle cx="60" cy="210" r="3.5" /><circle cx="65" cy="195" r="3.5" />
+      <circle cx="70" cy="180" r="3.5" /><circle cx="75" cy="165" r="3.5" /><circle cx="80" cy="150" r="3.5" />
+      <circle cx="85" cy="135" r="3.5" /><circle cx="90" cy="120" r="3.5" /><circle cx="95" cy="105" r="3.5" />
+      <circle cx="100" cy="90" r="3.5" /><circle cx="105" cy="75" r="3.5" /><circle cx="110" cy="60" r="3.5" />
+      <circle cx="115" cy="45" r="3.5" /><circle cx="120" cy="30" r="3.5" />
+    </g>
+
+    <!-- Gold Plated PCB Edge Connectors (Right Pin Header) -->
+    <g fill="#f59e0b" opacity="0.9">
+      <circle cx="270" cy="225" r="3.5" /><circle cx="275" cy="210" r="3.5" /><circle cx="280" cy="195" r="3.5" />
+      <circle cx="285" cy="180" r="3.5" /><circle cx="290" cy="165" r="3.5" /><circle cx="295" cy="150" r="3.5" />
+      <circle cx="300" cy="135" r="3.5" /><circle cx="305" cy="120" r="3.5" /><circle cx="310" cy="105" r="3.5" />
+      <circle cx="315" cy="90" r="3.5" /><circle cx="320" cy="75" r="3.5" /><circle cx="325" cy="60" r="3.5" />
+      <circle cx="330" cy="45" r="3.5" /><circle cx="335" cy="30" r="3.5" />
+    </g>
+
+    <!-- ESP32 Metallic RF Shielding Can -->
+    <path d="M 140 45 L 290 45 L 255 160 L 105 160 Z" fill="url(#metalShield)" stroke="#cbd5e1" stroke-width="1.2" />
+    <!-- Engraved Espressif Logo & Text -->
+    <text x="180" y="90" fill="#0f172a" class="fira-mono" font-size="11" font-weight="800" letter-spacing="1">ESPRESSIF</text>
+    <text x="175" y="110" fill="#1e293b" class="fira-mono" font-size="9" font-weight="700">ESP-WROOM-32D</text>
+    <text x="178" y="125" fill="#334155" class="fira-mono" font-size="8">CE 0700 • FCC ID</text>
+
+    <!-- Inverted F-Antenna (PCB Trace Antenna at Top) -->
+    <path d="M 155 35 L 275 35 L 270 24 L 260 24 L 260 30 L 230 30 L 230 24 L 220 24 L 220 30 L 190 30 L 190 24 L 180 24 L 180 35" 
+          fill="none" stroke="#d97706" stroke-width="2.5" />
+
+    <!-- Micro-USB Interface Port -->
+    <path d="M 145 228 L 195 228 L 190 248 L 140 248 Z" fill="#94a3b8" stroke="#475569" stroke-width="1.2" />
+    <text x="150" y="240" fill="#0f172a" class="fira-mono" font-size="7" font-weight="700">USB-UART</text>
+
+    <!-- Onboard LEDs -->
+    <!-- Power LED (Red) -->
+    <circle cx="95" cy="205" r="3" fill="#ef4444" filter="url(#ledGlow)" />
+    <text x="75" y="218" fill="#ef4444" class="fira-mono" font-size="7">PWR</text>
+
+    <!-- Status / Blue GPIO 2 LED (Blinking) -->
+    <circle cx="120" cy="200" r="3.5" class="led-active" />
+    <text x="110" y="215" fill="#38bdf8" class="fira-mono" font-size="7">IO2</text>
+
+    <!-- EN & BOOT Tactile Buttons -->
+    <rect x="75" y="222" width="12" height="10" rx="2" fill="#334155" stroke="#64748b" />
+    <rect x="210" y="222" width="12" height="10" rx="2" fill="#334155" stroke="#64748b" />
+  </g>
+
+  <!-- ========================================================
+       BUS INTERCONNECT (I2C LINES & POWER)
+       ======================================================== -->
+  <!-- SDA Trace (Gold) -->
+  <path d="M 370 215 L 470 215 L 530 180 L 590 180" fill="none" stroke="#f59e0b" stroke-width="2" />
+  <!-- SCL Trace (Gold) -->
+  <path d="M 375 200 L 465 200 L 525 165 L 590 165" fill="none" stroke="#fbbf24" stroke-width="2" />
+  <!-- 3V3 Power Line (Red) -->
+  <path d="M 380 185 L 460 185 L 520 150 L 590 150" fill="none" stroke="#ef4444" stroke-width="1.8" />
+  <!-- GND Line (Cyan) -->
+  <path d="M 385 170 L 455 170 L 515 135 L 590 135" fill="none" stroke="#06b6d4" stroke-width="1.8" />
+
+  <!-- Animated High-Speed Pulse along SDA Trace -->
+  <path d="M 370 215 L 470 215 L 530 180 L 590 180" class="signal-pulse" />
+
+  <!-- Data Bus Label Box -->
+  <g transform="translate(425, 235)">
+    <rect width="130" height="38" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+    <text x="10" y="16" fill="#38bdf8" class="fira-mono" font-size="9" font-weight="700">I2C BUS (400 kHz)</text>
+    <text x="10" y="30" fill="#94a3b8" class="fira-mono" font-size="8">SDA: GPIO 21 • SCL: 22</text>
+  </g>
+
+  <!-- ========================================================
+       MODULE 2: MPU-6050 6-AXIS IMU BREAKOUT BOARD
+       ======================================================== -->
+  <g transform="translate(590, 80)">
+    <!-- Breakout PCB (Classic Blue) -->
+    <path d="M 40 10 L 210 10 L 180 190 L 10 190 Z" fill="url(#mpuPcb)" stroke="#3b82f6" stroke-width="1.5" />
+
+    <!-- Header Pins on Left of Breakout -->
+    <g fill="#f59e0b">
+      <!-- VCC -->
+      <circle cx="28" cy="55" r="3.5" /><text x="35" y="58" fill="#f1f5f9" class="fira-mono" font-size="7">VCC</text>
+      <!-- GND -->
+      <circle cx="32" cy="70" r="3.5" /><text x="39" y="73" fill="#f1f5f9" class="fira-mono" font-size="7">GND</text>
+      <!-- SCL -->
+      <circle cx="36" cy="85" r="3.5" /><text x="43" y="88" fill="#f1f5f9" class="fira-mono" font-size="7">SCL</text>
+      <!-- SDA -->
+      <circle cx="40" cy="100" r="3.5" /><text x="47" y="103" fill="#f1f5f9" class="fira-mono" font-size="7">SDA</text>
+      <!-- XDA -->
+      <circle cx="44" cy="115" r="3.5" /><text x="51" y="118" fill="#64748b" class="fira-mono" font-size="7">XDA</text>
+      <!-- XCL -->
+      <circle cx="48" cy="130" r="3.5" /><text x="55" y="133" fill="#64748b" class="fira-mono" font-size="7">XCL</text>
+      <!-- AD0 -->
+      <circle cx="52" cy="145" r="3.5" /><text x="59" y="148" fill="#64748b" class="fira-mono" font-size="7">AD0</text>
+      <!-- INT -->
+      <circle cx="56" cy="160" r="3.5" /><text x="63" y="163" fill="#64748b" class="fira-mono" font-size="7">INT</text>
+    </g>
+
+    <!-- MPU-6050 Silicon QFN Chip (Center) -->
+    <path d="M 95 65 L 145 65 L 135 125 L 85 125 Z" fill="#090d16" stroke="#475569" stroke-width="1.2" />
+    <circle cx="92" cy="72" r="1.5" fill="#cbd5e1" /> <!-- Pin 1 Dot -->
+    <text x="96" y="92" fill="#cbd5e1" class="fira-mono" font-size="8" font-weight="700">MPU-6050</text>
+    <text x="98" y="105" fill="#64748b" class="fira-mono" font-size="6.5">MEMS GYRO</text>
+
+    <!-- Power LED on Sensor Board -->
+    <circle cx="160" cy="45" r="2.5" fill="#ef4444" filter="url(#ledGlow)" />
+  </g>
+
+  <!-- Top Title Banner inside Schematic -->
+  <g transform="translate(40, 25)">
+    <text x="0" y="0" fill="#38bdf8" class="fira-mono" font-size="12" font-weight="800">HARDWARE SCHEMATIC // ESP32 + MPU-6050 BLE AIR MOUSE</text>
+  </g>
+
+  <!-- Bottom Technical Legend -->
+  <g transform="translate(40, 335)">
+    <circle cx="5" cy="-4" r="3.5" fill="#f59e0b" />
+    <text x="14" y="0" fill="#94a3b8" class="fira-mono" font-size="9">I2C Master/Slave</text>
+
+    <circle cx="140" cy="-4" r="3.5" fill="#00f2fe" />
+    <text x="150" y="0" fill="#94a3b8" class="fira-mono" font-size="9">Live BLE Stream</text>
+
+    <circle cx="280" cy="-4" r="3.5" fill="#ef4444" />
+    <text x="290" y="0" fill="#94a3b8" class="fira-mono" font-size="9">3.3V Low-Dropout VREG</text>
+
+    <text x="540" y="0" fill="#64748b" class="fira-mono" font-size="9">Baud: 115200 | Sample Rate: 100 Hz | Driverless HID</text>
+  </g>
+</svg>

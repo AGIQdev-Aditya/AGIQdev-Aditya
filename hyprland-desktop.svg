@@ -1,0 +1,239 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080c14" />
+      <stop offset="60%" stop-color="#0d1117" />
+      <stop offset="100%" stop-color="#05070c" />
+    </linearGradient>
+
+    <!-- Hyprland Signature Active Border Gradient -->
+    <linearGradient id="hyprActiveBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="50%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#818cf8" />
+    </linearGradient>
+
+    <linearGradient id="hyprInactiveBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+
+    <!-- Subtle Wallpaper Geometric Pattern -->
+    <pattern id="dotPattern" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="0.8" fill="#334155" opacity="0.35" />
+    </pattern>
+
+    <!-- Neon Glow Filter -->
+    <filter id="borderGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes cursorBlink {
+      0%, 100% { opacity: 0; }
+      50% { opacity: 1; }
+    }
+
+    @keyframes streamLog {
+      0% { opacity: 0.3; }
+      50% { opacity: 1; }
+      100% { opacity: 0.8; }
+    }
+
+    @keyframes beaconGlow {
+      0%, 100% { fill: #10b981; filter: drop-shadow(0 0 2px #10b981); }
+      50% { fill: #34d399; filter: drop-shadow(0 0 6px #10b981); }
+    }
+
+    .fira-code {
+      font-family: 'Fira Code', 'JetBrains Mono', 'SF Mono', Consolas, monospace;
+    }
+
+    .cursor {
+      animation: cursorBlink 1s infinite steps(1);
+      fill: #38bdf8;
+    }
+
+    .stream-line {
+      animation: streamLog 3s infinite ease-in-out;
+    }
+  </style>
+
+  <!-- Desktop Base Frame -->
+  <rect width="960" height="520" rx="14" fill="url(#bgGrad)" stroke="#1e293b" stroke-width="1.5" />
+  <rect width="960" height="520" rx="14" fill="url(#dotPattern)" />
+
+  <!-- ========================================================
+       TOP WAYBAR (Hyprland Status Bar)
+       ======================================================== -->
+  <g transform="translate(18, 12)">
+    <!-- Bar Container -->
+    <rect width="924" height="34" rx="8" fill="#0f172a" fill-opacity="0.85" stroke="#1e293b" stroke-width="1" />
+
+    <!-- Left: Workspaces -->
+    <g transform="translate(10, 6)">
+      <!-- Workspace 1 (Active) -->
+      <rect x="0" y="0" width="34" height="22" rx="5" fill="#0284c7" />
+      <text x="17" y="15" fill="#ffffff" class="fira-code" font-size="11" font-weight="700" text-anchor="middle">1</text>
+
+      <!-- Workspace 2 -->
+      <rect x="38" y="0" width="30" height="22" rx="5" fill="#1e293b" />
+      <text x="53" y="15" fill="#94a3b8" class="fira-code" font-size="11" text-anchor="middle">2</text>
+
+      <!-- Workspace 3 -->
+      <rect x="72" y="0" width="30" height="22" rx="5" fill="#1e293b" />
+      <text x="87" y="15" fill="#94a3b8" class="fira-code" font-size="11" text-anchor="middle">3</text>
+
+      <!-- Workspace 4 -->
+      <rect x="106" y="0" width="30" height="22" rx="5" fill="#1e293b" />
+      <text x="121" y="15" fill="#94a3b8" class="fira-code" font-size="11" text-anchor="middle">4</text>
+    </g>
+
+    <!-- Center: Window Title -->
+    <g transform="translate(462, 22)">
+      <text x="0" y="0" fill="#cbd5e1" class="fira-code" font-size="11" font-weight="600" text-anchor="middle">
+        󰣇 archlinux // hyprland-wayland [workspace 1]
+      </text>
+    </g>
+
+    <!-- Right: Hardware & System Metrics -->
+    <g transform="translate(710, 7)">
+      <!-- CPU -->
+      <text x="0" y="14" fill="#38bdf8" class="fira-code" font-size="10.5">󰍛 18%</text>
+      <!-- RAM -->
+      <text x="58" y="14" fill="#a78bfa" class="fira-code" font-size="10.5">󰘚 3.4G</text>
+      <!-- BATTERY -->
+      <text x="120" y="14" fill="#10b981" class="fira-code" font-size="10.5">󰁹 96%</text>
+      <!-- TIME -->
+      <text x="170" y="14" fill="#f1f5f9" class="fira-code" font-size="10.5" font-weight="700">13:37</text>
+    </g>
+  </g>
+
+  <!-- ========================================================
+       WINDOW 1 (LEFT): NEOVIM (esp32_air_mouse.c)
+       Active Hyprland Window with Glowing Gradient Border
+       ======================================================== -->
+  <g transform="translate(18, 56)">
+    <!-- Outer Active Glow -->
+    <rect width="540" height="446" rx="10" fill="#090d16" stroke="url(#hyprActiveBorder)" stroke-width="2" filter="url(#borderGlow)" />
+
+    <!-- Window Title Bar -->
+    <path d="M 0 10 Q 0 0 10 0 L 530 0 Q 540 0 540 10 L 540 32 L 0 32 Z" fill="#111827" />
+    <line x1="0" y1="32" x2="540" y2="32" stroke="#1e293b" stroke-width="1" />
+
+    <!-- macOS / Window Circles -->
+    <circle cx="18" cy="16" r="4.5" fill="#f43f5e" />
+    <circle cx="34" cy="16" r="4.5" fill="#f59e0b" />
+    <circle cx="50" cy="16" r="4.5" fill="#10b981" />
+
+    <!-- Tab Info -->
+    <rect x="75" y="6" width="220" height="20" rx="4" fill="#1e293b" />
+    <text x="86" y="20" fill="#38bdf8" class="fira-code" font-size="10" font-weight="600"> esp32_air_mouse.c [+34, -2]</text>
+
+    <!-- Neovim Buffer Source Code -->
+    <g transform="translate(16, 52)" class="fira-code" font-size="11" xml:space="preserve">
+      <!-- Line 1 -->
+      <text x="0" y="0"><tspan fill="#475569">01 </tspan><tspan fill="#64748b">/* Low-Pass EMA Filter for MPU-6050 Gyro */</tspan></text>
+      <!-- Line 2 -->
+      <text x="0" y="18"><tspan fill="#475569">02 </tspan><tspan fill="#ec4899">#include</tspan> <tspan fill="#a3e635">&lt;esp_bt.h&gt;</tspan></text>
+      <!-- Line 3 -->
+      <text x="0" y="36"><tspan fill="#475569">03 </tspan><tspan fill="#ec4899">#include</tspan> <tspan fill="#a3e635">&lt;esp_hidd_api.h&gt;</tspan></text>
+      <!-- Line 4 -->
+      <text x="0" y="54"><tspan fill="#475569">04 </tspan><tspan fill="#ec4899">#define</tspan> <tspan fill="#38bdf8">EMA_ALPHA</tspan> <tspan fill="#f59e0b">0.35f</tspan>  <tspan fill="#64748b">// Smoothing coefficient</tspan></text>
+      <!-- Line 5 -->
+      <text x="0" y="72"><tspan fill="#475569">05 </tspan><tspan fill="#ec4899">#define</tspan> <tspan fill="#38bdf8">DEADZONE</tspan>  <tspan fill="#f59e0b">0.05f</tspan>  <tspan fill="#64748b">// Tremor threshold</tspan></text>
+      <!-- Line 6 -->
+      <text x="0" y="90"><tspan fill="#475569">06 </tspan></text>
+      <!-- Line 7 -->
+      <text x="0" y="108"><tspan fill="#475569">07 </tspan><tspan fill="#38bdf8">void</tspan> <tspan fill="#818cf8">process_imu_stream</tspan>(<tspan fill="#38bdf8">float</tspan> gx, <tspan fill="#38bdf8">float</tspan> gy, <tspan fill="#38bdf8">uint8_t</tspan> btn) {</text>
+      <!-- Line 8 -->
+      <text x="0" y="126"><tspan fill="#475569">08 </tspan>    <tspan fill="#ec4899">static</tspan> <tspan fill="#38bdf8">float</tspan> sm_x = <tspan fill="#f59e0b">0.0f</tspan>, sm_y = <tspan fill="#f59e0b">0.0f</tspan>;</text>
+      <!-- Line 9 -->
+      <text x="0" y="144"><tspan fill="#475569">09 </tspan>    sm_x = (<tspan fill="#38bdf8">EMA_ALPHA</tspan> * gx) + ((<tspan fill="#f59e0b">1.0f</tspan> - <tspan fill="#38bdf8">EMA_ALPHA</tspan>) * sm_x);</text>
+      <!-- Line 10 -->
+      <text x="0" y="162"><tspan fill="#475569">10 </tspan>    sm_y = (<tspan fill="#38bdf8">EMA_ALPHA</tspan> * gy) + ((<tspan fill="#f59e0b">1.0f</tspan> - <tspan fill="#38bdf8">EMA_ALPHA</tspan>) * sm_y);</text>
+      <!-- Line 11 -->
+      <text x="0" y="180"><tspan fill="#475569">11 </tspan></text>
+      <!-- Line 12 -->
+      <text x="0" y="198"><tspan fill="#475569">12 </tspan>    <tspan fill="#ec4899">if</tspan> (fabsf(sm_x) &lt; <tspan fill="#38bdf8">DEADZONE</tspan>) sm_x = <tspan fill="#f59e0b">0.0f</tspan>;</text>
+      <!-- Line 13 -->
+      <text x="0" y="216"><tspan fill="#475569">13 </tspan>    <tspan fill="#ec4899">if</tspan> (fabsf(sm_y) &lt; <tspan fill="#38bdf8">DEADZONE</tspan>) sm_y = <tspan fill="#f59e0b">0.0f</tspan>;</text>
+      <!-- Line 14 -->
+      <text x="0" y="234"><tspan fill="#475569">14 </tspan></text>
+      <!-- Line 15 -->
+      <text x="0" y="252"><tspan fill="#475569">15 </tspan>    <tspan fill="#64748b">/* Dispatch raw BLE HID mouse report */</tspan></text>
+      <!-- Line 16 -->
+      <text x="0" y="270"><tspan fill="#475569">16 </tspan>    <tspan fill="#38bdf8">int8_t</tspan> dx = (<tspan fill="#38bdf8">int8_t</tspan>)(sm_x * <tspan fill="#f59e0b">12.0f</tspan>);</text>
+      <!-- Line 17 -->
+      <text x="0" y="288"><tspan fill="#475569">17 </tspan>    <tspan fill="#38bdf8">int8_t</tspan> dy = (<tspan fill="#38bdf8">int8_t</tspan>)(sm_y * <tspan fill="#f59e0b">12.0f</tspan>);</text>
+      <!-- Line 18 -->
+      <text x="0" y="306"><tspan fill="#475569">18 </tspan>    <tspan fill="#818cf8">esp_hidd_send_mouse_report</tspan>(btn, dx, dy);</text>
+      <!-- Line 19 -->
+      <text x="0" y="324"><tspan fill="#475569">19 </tspan>}</text>
+      <!-- Line 20 -->
+      <text x="0" y="342"><tspan fill="#475569">20 </tspan><tspan fill="#38bdf8">// Continuous 100Hz I2C Polling Active</tspan></text>
+      <rect x="290" y="331" width="8" height="13" class="cursor" />
+    </g>
+
+    <!-- Neovim Statusline -->
+    <g transform="translate(0, 422)">
+      <rect width="540" height="24" rx="0" fill="#0284c7" />
+      <text x="12" y="16" fill="#ffffff" class="fira-code" font-size="10.5" font-weight="700">NORMAL</text>
+      <rect x="75" y="0" width="220" height="24" fill="#0f172a" />
+      <text x="86" y="16" fill="#38bdf8" class="fira-code" font-size="10">esp32_air_mouse.c</text>
+      <text x="380" y="16" fill="#cbd5e1" class="fira-code" font-size="10">utf-8 [unix] • 19,20 • 72%</text>
+    </g>
+  </g>
+
+  <!-- ========================================================
+       WINDOW 2 (RIGHT): SERIAL MONITOR / DEV TERMINAL
+       ======================================================== -->
+  <g transform="translate(572, 56)">
+    <!-- Terminal Window Frame -->
+    <rect width="370" height="446" rx="10" fill="#050811" stroke="url(#hyprInactiveBorder)" stroke-width="1.5" />
+
+    <!-- Terminal Title Bar -->
+    <path d="M 0 10 Q 0 0 10 0 L 360 0 Q 370 0 370 10 L 370 32 L 0 32 Z" fill="#0f172a" />
+    <line x1="0" y1="32" x2="370" y2="32" stroke="#1e293b" stroke-width="1" />
+
+    <!-- Tab -->
+    <rect x="18" y="6" width="180" height="20" rx="4" fill="#1e293b" />
+    <text x="28" y="20" fill="#10b981" class="fira-code" font-size="10" font-weight="600"> ttyUSB0 @ 115200</text>
+
+    <!-- Live Telemetry Stream -->
+    <g transform="translate(16, 54)" class="fira-code" font-size="10" xml:space="preserve">
+      <text x="0" y="0" fill="#64748b">[0.001s] <tspan fill="#38bdf8">INIT</tspan>: ESP32-WROOM-32D Core 0</text>
+      <text x="0" y="18" fill="#64748b">[0.012s] <tspan fill="#10b981">I2C_BUS</tspan>: SCL:22 SDA:21 @ 400kHz</text>
+      <text x="0" y="36" fill="#64748b">[0.024s] <tspan fill="#38bdf8">DEVICE</tspan>: MPU-6050 Verified (0x68)</text>
+      <text x="0" y="54" fill="#64748b">[0.038s] <tspan fill="#f59e0b">CALIB</tspan>: Sampling 500 gyro offsets</text>
+      <text x="0" y="72" fill="#64748b">[0.090s] <tspan fill="#10b981">STATUS</tspan>: Gyro Zero-Point Locked</text>
+      <text x="0" y="90" fill="#64748b">[0.110s] <tspan fill="#38bdf8">BLE_GAP</tspan>: Adv 'AirMouse-Aditya'</text>
+      <text x="0" y="108" fill="#64748b">[0.420s] <tspan fill="#a78bfa">GATT_CONN</tspan>: Paired to Arch Host</text>
+      <text x="0" y="126" fill="#334155">------------------------------------</text>
+      <text x="0" y="144" fill="#94a3b8" class="stream-line"><tspan fill="#38bdf8">PKT #1490</tspan> | dx: +02 | dy: -05 | btn: 0</text>
+      <text x="0" y="162" fill="#94a3b8" class="stream-line"><tspan fill="#38bdf8">PKT #1491</tspan> | dx: +04 | dy: -03 | btn: 0</text>
+      <text x="0" y="180" fill="#94a3b8" class="stream-line"><tspan fill="#38bdf8">PKT #1492</tspan> | dx: +01 | dy: -01 | btn: 0</text>
+      <text x="0" y="198" fill="#10b981" class="stream-line"><tspan fill="#f43f5e">PKT #1493</tspan> | dx:  00 | dy:  00 | btn: 1 [CLICK]</text>
+      <text x="0" y="216" fill="#94a3b8" class="stream-line"><tspan fill="#38bdf8">PKT #1494</tspan> | dx: -03 | dy: +02 | btn: 0</text>
+      <text x="0" y="234" fill="#334155">------------------------------------</text>
+      <text x="0" y="252" fill="#10b981">❯ LATENCY: 3.8 ms  |  JITTER: 0.01°</text>
+      <text x="0" y="270" fill="#38bdf8">❯ BLE RSSI: -48 dBm (Strong)</text>
+      <text x="0" y="288" fill="#f59e0b">❯ PROTOCOL: HID OVER GATT (HOGP)</text>
+      <text x="0" y="306" fill="#64748b">❯ RECALIBRATION: GPIO 15 (Ready)</text>
+    </g>
+
+    <!-- Visual Hardware Schematic Callout Box Inside Terminal -->
+    <g transform="translate(16, 380)">
+      <rect width="338" height="50" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+      <circle cx="15" cy="25" r="4" class="beacon" />
+      <text x="28" y="22" fill="#cbd5e1" class="fira-code" font-size="9.5" font-weight="700">HARDWARE LINK: REAL-TIME BLE</text>
+      <text x="28" y="38" fill="#64748b" class="fira-code" font-size="8.5">ESP32 ➔ HID Reports ➔ Wayland Pointer</text>
+    </g>
+  </g>
+</svg>
