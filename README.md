@@ -1,35 +1,55 @@
 <div align="center">
 
-# 🚀 Welcome to Aditya's Dev Space!
+<!-- Bespoke Animated Hardware & Oscilloscope Vector Banner -->
+<img src="https://raw.githubusercontent.com/AGIQdev-Aditya/AGIQdev-Aditya/main/telemetry-hero.svg" alt="Aditya Hardware & Systems Telemetry" width="100%" />
 
-<a href="https://github.com/AGIQdev-Aditya">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=1000&color=00B4D8&center=true&vCenter=true&width=580&lines=1st+Year+B.Tech+CSE+Student;Curious+Tinkerer+%26+Fast+Learner;Exploring+Hardware%2C+Python+%26+Modern+AI;Building+Projects+Hands-On!" alt="Typing SVG" />
-</a>
+<br/>
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=AGIQdev-Aditya&style=flat-square&color=00B4D8&label=PROFILE+VIEWS" alt="Profile Views" />
-</p>
+[![GitHub Student](https://img.shields.io/badge/GitHub-Verified_Student_Pack-238636?style=flat-square&logo=github&logoColor=white)](https://education.github.com)
+[![Kernel](https://img.shields.io/badge/Daily_Driver-Arch_Linux_%2F_Hyprland-1793D1?style=flat-square&logo=arch-linux&logoColor=white)](https://archlinux.org)
+[![Hardware](https://img.shields.io/badge/Embedded-ESP32_%7C_BLE_HID_%7C_I2C-E7352C?style=flat-square&logo=espressif&logoColor=white)](https://espressif.com)
+[![Python](https://img.shields.io/badge/Language-Python_3.x-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
 
 </div>
 
 ---
 
+### 🧱 Engineering Bento Grid
+
 <table>
 <tr>
-<td width="55%" valign="middle">
+<td width="50%" valign="top">
 
-### ✨ About Me
-
-- 🎓 **Undergraduate**: 1st Year B.Tech Computer Science & Engineering @ NIAT.
-- 🐧 **My Daily Driver**: Running **Arch Linux** with **Hyprland** (Wayland) — comfortable inside the terminal and using Git.
-- 🔌 **Hardware Tinkering**: Experimenting with **Raspberry Pi**, **ESP32**, and sensors.
-- ⚡ **How I Learn**: Hands-on project builder. I use modern AI tools and docs to rapidly prototype, debug, and learn.
-- 🎯 **What I'm Aiming For**: Building strong programming fundamentals, exploring LLM training pipelines, and optimizing models for edge hardware.
+#### 🔌 01 // Embedded Hardware & Firmware
+* **ESP32 BLE Air Mouse**: Built a custom gesture mouse translating 6-axis IMU data into smooth HID cursor events over Bluetooth Low Energy.
+* **Bus Protocols**: Hands-on I2C clock sync (400 kHz) and sensor polling with MPU-6050.
+* **Hardware Prototyping**: Raspberry Pi SBC computing, breadboard circuit logic, tactile interrupts.
 
 </td>
-<td width="45%" align="center" valign="middle">
+<td width="50%" valign="top">
 
-<img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="340" alt="Developer Coding Animation" />
+#### 🐧 02 // Systems & Linux Environment
+* **Daily Driver**: Arch Linux running Wayland compositor (Hyprland).
+* **CLI & Tooling**: POSIX shell scripting, fast keyboard-driven workflows, Vim/Neovim, Git version control.
+* **Low-Level Thinking**: Process isolation, file descriptors, signals, and system internals.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+#### 🐍 03 // Algorithmic Engineering
+* **Foundational Problem Solving**: Writing algorithmic logic from blank files without external libraries.
+* **Core Domains**: Digit arithmetic, recursion, string pattern algorithms, data structures (Lists, Hash Maps, Sets).
+* **Target**: Clean time-space complexity and robust modular code.
+
+</td>
+<td width="50%" valign="top">
+
+#### 🤖 04 // Agentic AI & Modern Workflows
+* **Local Inference**: Experimenting with edge LLM execution via Ollama.
+* **Agentic Tooling**: Using AI agents and Model Context Protocol (MCP) to automate software iteration cycles.
+* **Vision**: Bridging physical embedded sensors with autonomous intelligent agents.
 
 </td>
 </tr>
@@ -37,163 +57,67 @@
 
 ---
 
-### 🎮 Interactive Zone (Play a Game!)
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-#### ✊ Play Rock, Paper, Scissors!
-*Click any move to play against my bot:*
+### 🔬 Hardware Spotlight: ESP32 Bluetooth Air Mouse
 
 <details>
-<summary><b>✊ Throw Rock</b></summary>
-<br/>
-<blockquote>
-🤖 <b>Aditya Bot:</b> ✋ Paper!<br/>
-<i>Paper covers rock — I win this round! Rematch? 😄</i>
-</blockquote>
-</details>
-
-<details>
-<summary><b>✋ Throw Paper</b></summary>
-<br/>
-<blockquote>
-🤖 <b>Aditya Bot:</b> ✌️ Scissors!<br/>
-<i>Scissors cuts paper! Good game, try again! ✂️</i>
-</blockquote>
-</details>
-
-<details>
-<summary><b>✌️ Throw Scissors</b></summary>
-<br/>
-<blockquote>
-🤖 <b>Aditya Bot:</b> ✊ Rock!<br/>
-<i>Rock crushes scissors! Better luck next time! 💥</i>
-</blockquote>
-</details>
-
-</td>
-<td width="50%" valign="top">
-
-#### 💡 Quick Tech Trivia
-*Test your knowledge on my tech setup:*
-
-<details>
-<summary><b>Q: What sensor tracks wrist tilt in my Air Mouse?</b></summary>
-<br/>
-<blockquote>
-<b>Answer:</b> The <b>MPU-6050</b> (6-axis gyro & accelerometer over I2C)!
-</blockquote>
-</details>
-
-<details>
-<summary><b>Q: What OS & window manager do I daily-drive?</b></summary>
-<br/>
-<blockquote>
-<b>Answer:</b> <b>Arch Linux</b> with <b>Hyprland</b> (Wayland)!
-</blockquote>
-</details>
-
-<details>
-<summary><b>Q: What is my main goal in the Gen AI Club?</b></summary>
-<br/>
-<blockquote>
-<b>Answer:</b> Learning <b>LLM training pipelines</b> & model efficiency for edge devices!
-</blockquote>
-</details>
-
-</td>
-</tr>
-</table>
-
----
-
-### 🚀 Projects & Experiments
-
-- 🖱️ **[ESP32 Bluetooth Air Mouse](https://github.com/AGIQdev-Aditya/esp32-air-mouse)**  
-  A DIY wireless mouse controlled by hand and wrist motion. I assembled the circuit with an ESP32 and MPU-6050 sensor, using AI-assisted programming to get the Bluetooth BLE connection and cursor smoothing working.
-
-<details>
-<summary><b>🔌 Click to inspect the ESP32 Air Mouse Circuit Schematic</b></summary>
+<summary><b>🔍 Click to expand Circuit Wiring & Signal Flow Architecture</b></summary>
 <br/>
 
 ```text
-       +-----------------------------------+
-       |         ESP32 DevKit V1           |
-       |                                   |
-       |  [3V3] ------------ [VCC]         |-----> MPU-6050 6-Axis IMU (I2C)
-       |  [GND] ------------ [GND]         |-----> Common Ground
-       |  [GPIO 22] -------- [SCL]         |-----> I2C Clock Line
-       |  [GPIO 21] -------- [SDA]         |-----> I2C Data Line
-       |  [GPIO 15] -----[ Tactile Button ]+-----> Recalibration / Left Click
-       +-----------------------------------+
+  [ PHYSICAL INPUT ]           [ EMBEDDED CONTROLLER ]              [ BLUETOOTH BLE ]            [ HOST OS ]
+ ┌─────────────────┐          ┌───────────────────────┐           ┌─────────────────┐          ┌──────────────┐
+ │ MPU-6050 6-Axis │  I2C     │ ESP32 DevKit V1 Core  │   HID     │ BLE GATT Server │  Radio   │ Wayland Host │
+ │ (Gyro + Accel)  ├─────────►│ - Low-pass EMA Filter ├──────────►│ (Mouse Report   ├─────────►│ Cursor Event │
+ └─────────────────┘ 400 kHz  │ - Dynamic Deadzone    │  Reports  │  Descriptor)    │ 2.4 GHz  └──────────────┘
+                              │ - Tactile Click Event │           └─────────────────┘
+                              └───────────────────────┘
 ```
+
+**Key Implementation Highlights:**
+* **Jitter Elimination**: Filtered raw accelerometer noise using Exponential Moving Average (EMA) smoothing to eliminate cursor tremor.
+* **BLE HID Protocol**: Configured direct Human Interface Device (HID) mouse descriptors for driverless pairing with Linux, Windows, and Android.
+* **Repository**: [`AGIQdev-Aditya/esp32-air-mouse`](https://github.com/AGIQdev-Aditya/esp32-air-mouse)
 
 </details>
 
-<br/>
-
-- 🐍 **[Python Journey](https://github.com/AGIQdev-Aditya/python-journey)**  
-  My daily practice repository where I experiment with Python basics, syntax, and logic building exercises.
-
-- 🌐 **[HTML Learning](https://github.com/AGIQdev-Aditya/html-learning)**  
-  Beginner notes and playground files exploring semantic tags and fundamental web page structure.
-
 ---
 
-### 🛠️ Tools & Technologies
+
+### 🛠️ Tech Stack & Tooling
 
 <div align="center">
 
 <a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=linux,arch,bash,git,github,vscode,raspberrypi,arduino,py&theme=dark" alt="Skill Icons" />
+  <img src="https://skillicons.dev/icons?i=arch,linux,bash,c,py,git,github,vscode,raspberrypi,arduino,html,css&theme=dark" alt="Aditya Tech Stack" />
 </a>
 
 </div>
 
-<br/>
-
-| Category | What I'm Exploring |
-| :--- | :--- |
-| 🐧 **OS & Desktop** | Arch Linux, Hyprland (Wayland), Bash CLI, Git & GitHub |
-| 🔌 **Hardware & SBCs** | Raspberry Pi (single-board computing), ESP32 DevKit, Arduino, basic sensors |
-| 🐍 **Programming** | Learning beginner Python (syntax, basic logic, small scripts) |
-| 🤖 **AI & ML Interests** | Running local models via Ollama; eager to learn LLM training and efficiency |
-
 ---
 
-### 📊 GitHub Activity & Insights
-
-<table width="100%">
-<tr>
-<td width="50%" align="center" valign="middle">
-  <img src="https://github-readme-stats-anuraghazra1.vercel.app/api?username=AGIQdev-Aditya&show_icons=true&theme=tokyonight&hide_border=true&title_color=00B4D8&icon_color=00B4D8&text_color=94A3B8" alt="GitHub Stats" width="100%" />
-</td>
-<td width="50%" align="center" valign="middle">
-  <img src="https://streak-stats.demolab.com?user=AGIQdev-Aditya&theme=tokyonight&hide_border=true&stroke=00B4D8&ring=00B4D8&fire=00B4D8&currStreakLabel=00B4D8" alt="GitHub Streak" width="100%" />
-</td>
-</tr>
-</table>
-
-<br/>
+### 💡 The Blueprint (How This Profile Was Engineered)
 
 <details>
-<summary><b>☕ Developer Coffee Break (Click to reveal today's programming joke!)</b></summary>
+<summary><b>📐 How is this profile built? (For developers looking to inspect the code)</b></summary>
 <br/>
-<div align="center">
-  <img src="https://readme-jokes.vercel.app/api?theme=tokyonight&hideBorder=true" alt="Daily Programmer Joke" width="480" />
-</div>
+
+> Most profiles rely on generic third-party generator iframes that break or load slowly. This profile is engineered with:
+> 1. **Handcrafted Animated SVG**: The top telemetry banner is pure vector SVG with embedded CSS `@keyframes` animations—no JavaScript, zero external dependencies, 100% compliant with GitHub's strict sanitization engine.
+> 2. **GitHub Actions Snake**: Automated `.github/workflows/snake.yml` scheduled via cron to parse the GraphQL API and generate dynamic vector paths.
+> 3. **Native Markdown Bento Grid**: Lightweight, responsive HTML tables that adapt cleanly to both mobile and desktop screens.
+>
+> Feel free to inspect the raw markdown or fork the SVG assets to build your own!
+
 </details>
 
 ---
 
-### 📬 Let's Connect!
+### 📬 Connect
 
 <div align="center">
 
 [![GitHub](https://img.shields.io/badge/GitHub-AGIQdev--Aditya-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AGIQdev-Aditya)
-[![Personal Email](https://img.shields.io/badge/Personal_Email-adityasharma8ti%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:adityasharma8ti@gmail.com)
-[![Dev Email](https://img.shields.io/badge/Dev_Email-agiq.dev%40gmail.com-0078D4?style=for-the-badge&logo=gmail&logoColor=white)](mailto:agiq.dev@gmail.com)
+[![Email](https://img.shields.io/badge/Tech_Email-agiq.dev%40gmail.com-0078D4?style=for-the-badge&logo=gmail&logoColor=white)](mailto:agiq.dev@gmail.com)
+[![Personal](https://img.shields.io/badge/Personal-adityasharma8ti%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:adityasharma8ti@gmail.com)
 
 </div>
