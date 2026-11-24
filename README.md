@@ -5,10 +5,10 @@
 
 <br/>
 
-[![GitHub Student](https://img.shields.io/badge/GitHub-Verified_Student_Pack-238636?style=flat-square&logo=github&logoColor=white)](https://education.github.com)
-[![Kernel](https://img.shields.io/badge/Daily_Driver-Arch_Linux_%2F_Hyprland-1793D1?style=flat-square&logo=arch-linux&logoColor=white)](https://archlinux.org)
-[![Hardware](https://img.shields.io/badge/Embedded-ESP32_%7C_BLE_HID_%7C_I2C-E7352C?style=flat-square&logo=espressif&logoColor=white)](https://espressif.com)
-[![Python](https://img.shields.io/badge/Language-Python_3.x-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
+[![GitHub Student](https://img.shields.io/badge/GitHub-Verified_Student-238636?style=flat-square&logo=github&logoColor=white)](https://education.github.com)
+[![Daily Driver](https://img.shields.io/badge/Daily_Driver-Arch_Linux_--_Hyprland-1793D1?style=flat-square&logo=arch-linux&logoColor=white)](https://archlinux.org)
+[![Embedded](https://img.shields.io/badge/Embedded-ESP32_--_BLE_HID-E7352C?style=flat-square&logo=espressif&logoColor=white)](https://espressif.com)
+[![Language](https://img.shields.io/badge/Language-Python_3.x-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
 
 </div>
 
