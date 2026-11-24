@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" width="100%" height="100%">
+  <!-- Deep Matte Black/Dark Grey Screen -->
+  <rect width="800" height="240" rx="8" fill="#09090b" stroke="#1f242d" stroke-width="1" />
+
+  <!-- Name in Dark Grey -->
+  <text x="400" y="128" 
+        fill="#52525b" 
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" 
+        font-size="28" 
+        font-weight="500" 
+        letter-spacing="6px" 
+        text-anchor="middle">
+    ADITYA SHARMA
+  </text>
+</svg>
