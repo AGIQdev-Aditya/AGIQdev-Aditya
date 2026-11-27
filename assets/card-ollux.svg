@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 218" width="100%" height="100%">
+  <style>
+    @keyframes packetFlow {
+      from { stroke-dashoffset: 36; }
+      to { stroke-dashoffset: 0; }
+    }
+    .wire-flow { stroke-dasharray: 6 4; animation: packetFlow 2s linear infinite; }
+  </style>
+  <rect x="1" y="1" width="458" height="216" rx="10" fill="#0b0b0e" stroke="#27272a" stroke-width="1"/>
+  <!-- Corner Accent -->
+  <path d="M 12 12 L 20 12 M 12 12 L 12 20" stroke="#52525b" stroke-width="1"/>
+  <!-- Top Header -->
+  <text x="26" y="30" fill="#71717a" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'DejaVu Sans Mono', monospace" font-size="10.5" letter-spacing="1.2">01 // NATIVE LINUX UI</text>
+  <rect x="284" y="15" width="154" height="22" rx="4" fill="#111115" stroke="#27272a" stroke-width="1"/>
+  <text x="361" y="29" fill="#38bdf8" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'DejaVu Sans Mono', monospace" font-size="10" text-anchor="middle">Python · WebKit2GTK</text>
+
+  <!-- Title & Desc -->
+  <text x="26" y="64" fill="#fafafa" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="22" font-weight="700">ollux</text>
+  <text x="26" y="86" fill="#a1a1aa" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5">Lightweight Linux GTK companion for local Ollama models.</text>
+
+  <line x1="26" y1="103" x2="434" y2="103" stroke="#1e1e24" stroke-width="1"/>
+
+  <!-- Embedded Blueprint: RAM Footprint & Localhost Loop -->
+  <rect x="26" y="116" width="408" height="84" rx="6" fill="#060608" stroke="#1c1c22" stroke-width="1"/>
+
+  <!-- Footprints -->
+  <text x="40" y="137" fill="#d4d4d8" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'DejaVu Sans Mono', monospace" font-size="10">ollux (GTK)</text>
+  <rect x="148" y="128" width="180" height="10" rx="2" fill="#18181b"/>
+  <rect x="148" y="128" width="44" height="10" rx="2" fill="#38bdf8"/>
+  <text x="338" y="137" fill="#38bdf8" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'DejaVu Sans Mono', monospace" font-size="10">~160-220 MB</text>
+
+  <text x="40" y="157" fill="#71717a" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'DejaVu Sans Mono', monospace" font-size="10">Electron UI</text>
+  <rect x="148" y="148" width="180" height="10" rx="2" fill="#27272a"/>
+  <text x="338" y="157" fill="#71717a" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'DejaVu Sans Mono', monospace" font-size="10">~550-900 MB</text>
+
+  <!-- Connection Schematic -->
+  <rect x="40" y="170" width="96" height="20" rx="3" fill="#111115" stroke="#27272a"/>
+  <text x="88" y="183" fill="#e4e4e7" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'DejaVu Sans Mono', monospace" font-size="9.5" text-anchor="middle">Wayland GTK</text>
+
+  <line x1="138" y1="180" x2="296" y2="180" stroke="#38bdf8" stroke-width="1.4" class="wire-flow"/>
+  <text x="217" y="176" fill="#71717a" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'DejaVu Sans Mono', monospace" font-size="8.5" text-anchor="middle">127.0.0.1:11434</text>
+
+  <rect x="298" y="170" width="122" height="20" rx="3" fill="#111115" stroke="#27272a"/>
+  <text x="359" y="183" fill="#10b981" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'DejaVu Sans Mono', monospace" font-size="9.5" text-anchor="middle">Local Ollama API</text>
+</svg>

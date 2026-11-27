@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 326" width="100%" height="100%">
+  <defs>
+    <pattern id="microDots" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="9" cy="9" r="0.65" fill="#27272a" />
+    </pattern>
+    <linearGradient id="waveGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.15"/>
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="scanSweep" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0"/>
+      <stop offset="85%" stop-color="#38bdf8" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.35"/>
+    </linearGradient>
+    <clipPath id="scopeClip">
+      <rect x="554" y="76" width="364" height="100" rx="4"/>
+    </clipPath>
+  </defs>
+
+  <style>
+    @keyframes pulseLed {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+    @keyframes flowDash {
+      from { stroke-dashoffset: 48; }
+      to { stroke-dashoffset: 0; }
+    }
+    @keyframes scanMove {
+      0% { transform: translateX(-60px); }
+      100% { transform: translateX(370px); }
+    }
+    @keyframes cursorBlink {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+    .led-live { animation: pulseLed 2.2s ease-in-out infinite; }
+    .trace-flow { stroke-dasharray: 8 4; animation: flowDash 2.8s linear infinite; }
+    .scope-sweep { animation: scanMove 4.5s linear infinite; }
+    .term-cursor { animation: cursorBlink 1.1s steps(1) infinite; }
+  </style>
+
+  <!-- Base Obsidian Canvas -->
+  <rect x="1" y="1" width="958" height="324" rx="10" fill="#09090b" stroke="#27272a" stroke-width="1"/>
+  <rect x="2" y="38" width="956" height="286" rx="9" fill="url(#microDots)" opacity="0.55"/>
+
+  <!-- Precision Corner Calibration Marks -->
+  <path d="M 14 14 L 24 14 M 14 14 L 14 24" stroke="#52525b" stroke-width="1.2" fill="none"/>
+  <path d="M 946 14 L 936 14 M 946 14 L 946 24" stroke="#52525b" stroke-width="1.2" fill="none"/>
+  <path d="M 14 312 L 24 312 M 14 312 L 14 302" stroke="#52525b" stroke-width="1.2" fill="none"/>
+  <path d="M 946 312 L 936 312 M 946 312 L 946 302" stroke="#52525b" stroke-width="1.2" fill="none"/>
+
+  <!-- Top Telemetry Header Strip -->
+  <line x1="1" y1="38" x2="959" y2="38" stroke="#1f1f25" stroke-width="1"/>
+  <text x="34" y="24" fill="#a1a1aa" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'DejaVu Sans Mono', monospace" font-size="11" letter-spacing="1.4">00 // SYSTEM DOSSIER</text>
+  <text x="240" y="24" fill="#52525b" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'DejaVu Sans Mono', monospace" font-size="11">│</text>
+  <text x="262" y="24" fill="#71717a" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'DejaVu Sans Mono', monospace" font-size="11" letter-spacing="1">NIAT × ADYPU · PUNE, IN</text>
+
+  <!-- Right Live Status Pill -->
+  <g transform="translate(692, 11)">
+    <rect width="234" height="19" rx="4" fill="#111115" stroke="#27272a" stroke-width="1"/>
+    <circle cx="13" cy="9.5" r="3" fill="#10b981" class="led-live"/>
+    <text x="24" y="13" fill="#d4d4d8" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'DejaVu Sans Mono', monospace" font-size="10" letter-spacing="0.8">B.TECH CSE (DS) · YEAR 01</text>
+  </g>
+
+  <!-- LEFT BLOCK: Identity & Radical Honesty -->
+  <text x="34" y="80" fill="#71717a" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'DejaVu Sans Mono', monospace" font-size="11" letter-spacing="2.2">AGIQDEV-ADITYA // PORTFOLIO_SPEC</text>
+
+  <text x="34" y="128" fill="#fafafa" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="40" font-weight="700" letter-spacing="-1">ADITYA SHARMA</text>
+
+  <text x="34" y="156" fill="#a1a1aa" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="400">
+    1st-year B.Tech CSE — Arch Linux daily driver, hardware &amp; AI builder.
+  </text>
+
+  <!-- Dual Mode Split Boxes -->
+  <g transform="translate(34, 178)">
+    <rect width="232" height="48" rx="6" fill="#111115" stroke="#27272a" stroke-width="1"/>
+    <circle cx="15" cy="17" r="3" fill="#38bdf8"/>
+    <text x="26" y="20" fill="#e4e4e7" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'DejaVu Sans Mono', monospace" font-size="11" font-weight="600">SHIP FAST</text>
+    <text x="15" y="37" fill="#71717a" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'DejaVu Sans Mono', monospace" font-size="10.5">AI tools, web apps &amp; ESP32</text>
+  </g>
+
+  <g transform="translate(278, 178)">
+    <rect width="244" height="48" rx="6" fill="#111115" stroke="#27272a" stroke-width="1"/>
+    <circle cx="15" cy="17" r="3" fill="#f59e0b"/>
+    <text x="26" y="20" fill="#e4e4e7" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'DejaVu Sans Mono', monospace" font-size="11" font-weight="600">GRIND FUNDAMENTALS</text>
+    <text x="15" y="37" fill="#71717a" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'DejaVu Sans Mono', monospace" font-size="10.5">Python &amp; Web from blank files</text>
+  </g>
+
+  <!-- Bottom Left Hardware & Repo Telemetry Strip -->
+  <g transform="translate(34, 248)">
+    <rect width="488" height="48" rx="6" fill="#0d0d11" stroke="#1e1e24" stroke-width="1"/>
+    <text x="16" y="21" fill="#71717a" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'DejaVu Sans Mono', monospace" font-size="10" letter-spacing="1">VERIFIED GITHUB SNAPSHOT (2026)</text>
+    <text x="16" y="38" fill="#d4d4d8" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'DejaVu Sans Mono', monospace" font-size="11.5">11 Public Repos   <tspan fill="#3f3f46">│</tspan>   159 Contributions   <tspan fill="#3f3f46">│</tspan>   Joined Feb 2026</text>
+  </g>
+
+  <!-- Vertical Divider -->
+  <line x1="538" y1="54" x2="538" y2="298" stroke="#1f1f25" stroke-width="1"/>
+
+  <!-- RIGHT BLOCK: Hardware Oscilloscope + Host Spec Window -->
+  <rect x="554" y="54" width="364" height="242" rx="7" fill="#060608" stroke="#27272a" stroke-width="1"/>
+
+  <!-- Oscilloscope Mini Title Bar -->
+  <line x1="554" y1="76" x2="918" y2="76" stroke="#1f1f25" stroke-width="1"/>
+  <text x="565" y="69" fill="#a1a1aa" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'DejaVu Sans Mono', monospace" font-size="10" letter-spacing="1">SIGNAL // I2C + LOCAL LLM</text>
+  <text x="862" y="69" fill="#38bdf8" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'DejaVu Sans Mono', monospace" font-size="10" letter-spacing="1">LIVE</text>
+  <circle cx="902" cy="65.5" r="2.5" fill="#38bdf8" class="led-live"/>
+
+  <!-- Oscilloscope Screen -->
+  <g clip-path="url(#scopeClip)">
+      <line x1="578" y1="78" x2="578" y2="174" stroke="#18181d" stroke-width="1"/>
+      <line x1="602" y1="78" x2="602" y2="174" stroke="#18181d" stroke-width="1"/>
+      <line x1="626" y1="78" x2="626" y2="174" stroke="#18181d" stroke-width="1"/>
+      <line x1="650" y1="78" x2="650" y2="174" stroke="#18181d" stroke-width="1"/>
+      <line x1="674" y1="78" x2="674" y2="174" stroke="#18181d" stroke-width="1"/>
+      <line x1="698" y1="78" x2="698" y2="174" stroke="#18181d" stroke-width="1"/>
+      <line x1="722" y1="78" x2="722" y2="174" stroke="#18181d" stroke-width="1"/>
+      <line x1="746" y1="78" x2="746" y2="174" stroke="#18181d" stroke-width="1"/>
+      <line x1="770" y1="78" x2="770" y2="174" stroke="#18181d" stroke-width="1"/>
+      <line x1="794" y1="78" x2="794" y2="174" stroke="#18181d" stroke-width="1"/>
+      <line x1="818" y1="78" x2="818" y2="174" stroke="#18181d" stroke-width="1"/>
+      <line x1="842" y1="78" x2="842" y2="174" stroke="#18181d" stroke-width="1"/>
+      <line x1="866" y1="78" x2="866" y2="174" stroke="#18181d" stroke-width="1"/>
+      <line x1="890" y1="78" x2="890" y2="174" stroke="#18181d" stroke-width="1"/>
+      <line x1="914" y1="78" x2="914" y2="174" stroke="#18181d" stroke-width="1"/>
+      <line x1="556" y1="94" x2="916" y2="94" stroke="#18181d" stroke-width="1"/>
+      <line x1="556" y1="114" x2="916" y2="114" stroke="#18181d" stroke-width="1"/>
+      <line x1="556" y1="134" x2="916" y2="134" stroke="#18181d" stroke-width="1"/>
+      <line x1="556" y1="154" x2="916" y2="154" stroke="#18181d" stroke-width="1"/>
+      <!-- Baseline Reference -->
+      <line x1="556" y1="116" x2="916" y2="116" stroke="#27272a" stroke-width="0.8" stroke-dasharray="3 3"/>
+      <!-- Analog Gyro Curve -->
+      <path d="M 562.0,116.0 L 564.0,113.7 L 566.0,111.5 L 568.0,109.5 L 570.0,107.6 L 571.9,106.0 L 573.9,104.8 L 575.9,103.9 L 577.9,103.3 L 579.9,103.1 L 581.9,103.3 L 583.9,103.7 L 585.9,104.3 L 587.9,105.0 L 589.8,105.9 L 591.8,106.7 L 593.8,107.5 L 595.8,108.2 L 597.8,108.7 L 599.8,109.2 L 601.8,109.5 L 603.8,109.7 L 605.7,109.9 L 607.7,110.1 L 609.7,110.3 L 611.7,110.7 L 613.7,111.3 L 615.7,112.1 L 617.7,113.2 L 619.7,114.6 L 621.7,116.3 L 623.6,118.2 L 625.6,120.4 L 627.6,122.7 L 629.6,125.0 L 631.6,127.3 L 633.6,129.5 L 635.6,131.4 L 637.6,133.0 L 639.6,134.2 L 641.5,134.8 L 643.5,135.0 L 645.5,134.7 L 647.5,133.8 L 649.5,132.5 L 651.5,130.7 L 653.5,128.7 L 655.5,126.4 L 657.4,124.1 L 659.4,121.7 L 661.4,119.4 L 663.4,117.3 L 665.4,115.4 L 667.4,113.8 L 669.4,112.5 L 671.4,111.4 L 673.4,110.7 L 675.3,110.1 L 677.3,109.7 L 679.3,109.4 L 681.3,109.1 L 683.3,108.8 L 685.3,108.3 L 687.3,107.7 L 689.3,106.9 L 691.3,105.9 L 693.2,104.8 L 695.2,103.6 L 697.2,102.3 L 699.2,101.1 L 701.2,100.1 L 703.2,99.3 L 705.2,98.9 L 707.2,98.8 L 709.1,99.2 L 711.1,100.1 L 713.1,101.6 L 715.1,103.5 L 717.1,105.8 L 719.1,108.5 L 721.1,111.5 L 723.1,114.7 L 725.1,117.9 L 727.0,121.0 L 729.0,123.9 L 731.0,126.5 L 733.0,128.7 L 735.0,130.4 L 737.0,131.7 L 739.0,132.4 L 741.0,132.7 L 743.0,132.5 L 744.9,132.0 L 746.9,131.2 L 748.9,130.2 L 750.9,129.2 L 752.9,128.1 L 754.9,127.0 L 756.9,126.2 L 758.9,125.4 L 760.9,124.8 L 762.8,124.4 L 764.8,124.1 L 766.8,123.9 L 768.8,123.7 L 770.8,123.4 L 772.8,123.0 L 774.8,122.3 L 776.8,121.4 L 778.7,120.2 L 780.7,118.6 L 782.7,116.7 L 784.7,114.6 L 786.7,112.2 L 788.7,109.7 L 790.7,107.1 L 792.7,104.6 L 794.7,102.2 L 796.6,100.1 L 798.6,98.4 L 800.6,97.1 L 802.6,96.4 L 804.6,96.2 L 806.6,96.5 L 808.6,97.4 L 810.6,98.7 L 812.6,100.4 L 814.5,102.5 L 816.5,104.7 L 818.5,107.1 L 820.5,109.5 L 822.5,111.7 L 824.5,113.8 L 826.5,115.7 L 828.5,117.2 L 830.4,118.5 L 832.4,119.5 L 834.4,120.2 L 836.4,120.8 L 838.4,121.1 L 840.4,121.4 L 842.4,121.7 L 844.4,122.0 L 846.4,122.4 L 848.3,122.9 L 850.3,123.6 L 852.3,124.4 L 854.3,125.3 L 856.3,126.4 L 858.3,127.4 L 860.3,128.4 L 862.3,129.3 L 864.3,129.9 L 866.2,130.3 L 868.2,130.4 L 870.2,130.1 L 872.2,129.4 L 874.2,128.3 L 876.2,126.8 L 878.2,124.9 L 880.2,122.8 L 882.1,120.5 L 884.1,118.0 L 886.1,115.6 L 888.1,113.2 L 890.1,111.0 L 892.1,109.0 L 894.1,107.3 L 896.1,106.0 L 898.1,105.1 L 900.0,104.5 L 902.0,104.3 L 904.0,104.4 L 906.0,104.7 L 908.0,105.3" fill="none" stroke="url(#waveGlow)" stroke-width="1.8" stroke-linecap="round"/>
+      <!-- Traveling Digital Trace -->
+      <path d="M 562.0,160 L 572.8,160 L 572.8,144 L 583.6,144 L 594.4,144 L 594.4,160 L 605.2,160 L 605.2,144 L 616.1,144 L 616.1,160 L 626.9,160 L 637.7,160 L 637.7,144 L 648.5,144 L 659.3,144 L 670.1,144 L 670.1,160 L 680.9,160 L 680.9,144 L 691.8,144 L 691.8,160 L 702.6,160 L 702.6,144 L 713.4,144 L 713.4,160 L 724.2,160 L 735.0,160 L 735.0,144 L 745.8,144 L 756.6,144 L 756.6,160 L 767.4,160 L 767.4,144 L 778.2,144 L 778.2,160 L 789.1,160 L 789.1,144 L 799.9,144 L 810.7,144 L 810.7,160 L 821.5,160 L 832.3,160 L 832.3,144 L 843.1,144 L 843.1,160 L 853.9,160 L 853.9,144 L 864.8,144 L 875.6,144 L 875.6,160 L 886.4,160 L 886.4,144 L 897.2,144 L 897.2,160 L 908.0,160" fill="none" stroke="#10b981" stroke-width="1.3" opacity="0.85" class="trace-flow"/>
+      <!-- Sweeping Radar Band -->
+      <rect x="554" y="76" width="56" height="100" fill="url(#scanSweep)" class="scope-sweep"/>
+      <!-- Labels inside Scope -->
+      <text x="564" y="91" fill="#38bdf8" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'DejaVu Sans Mono', monospace" font-size="9" opacity="0.85">CH1: MPU-6050</text>
+      <text x="564" y="170" fill="#10b981" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'DejaVu Sans Mono', monospace" font-size="9" opacity="0.85">CH2: GPIO 21/22</text>
+  </g>
+
+  <line x1="554" y1="176" x2="918" y2="176" stroke="#1f1f25" stroke-width="1"/>
+
+  <!-- Host Spec Fetch Terminal Block -->
+  <g font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'DejaVu Sans Mono', monospace" font-size="10.8">
+    <text x="566" y="199" fill="#38bdf8">os</text>
+    <text x="632" y="199" fill="#e4e4e7">Arch Linux · 7.2.15-4-omarchy</text>
+
+    <text x="566" y="220" fill="#38bdf8">wm</text>
+    <text x="632" y="220" fill="#e4e4e7">Hyprland (Wayland Compositor)</text>
+
+    <text x="566" y="241" fill="#38bdf8">host</text>
+    <text x="632" y="241" fill="#e4e4e7">Dell Precision 7540 · i7 · 31G</text>
+
+    <text x="566" y="262" fill="#38bdf8">bench</text>
+    <text x="632" y="262" fill="#a1a1aa">ESP32 · MPU-6050 · Pi 4B · Uno</text>
+
+    <text x="566" y="284" fill="#10b981">❯</text>
+    <text x="580" y="284" fill="#71717a">status: building + learning daily</text>
+    <rect x="814" y="274" width="7" height="12" fill="#38bdf8" class="term-cursor"/>
+  </g>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 212" width="100%" height="100%">
+  <rect x="1" y="1" width="958" height="210" rx="10" fill="#09090b" stroke="#27272a" stroke-width="1"/>
+  <path d="M 14 14 L 22 14 M 14 14 L 14 22" stroke="#52525b" stroke-width="1"/>
+  <path d="M 946 14 L 938 14 M 946 14 L 946 22" stroke="#52525b" stroke-width="1"/>
+
+  <text x="32" y="29" fill="#71717a" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'DejaVu Sans Mono', monospace" font-size="11" letter-spacing="1.4">05 // RADICAL HONESTY — CURRENT SKILL BOUNDARIES (SEMESTER 1)</text>
+  <line x1="1" y1="42" x2="959" y2="42" stroke="#1f1f25" stroke-width="1"/>
+
+  <!-- Left Rail: AI-Assisted Velocity -->
+  <rect x="26" y="56" width="444" height="108" rx="6" fill="#0d0d11" stroke="#27272a"/>
+  <circle cx="44" cy="75" r="3.5" fill="#38bdf8"/>
+  <text x="56" y="79" fill="#fafafa" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'DejaVu Sans Mono', monospace" font-size="11.5" font-weight="600">AI-ASSISTED PROTOTYPING &amp; SYSTEM SETUP</text>
+  <text x="44" y="99" fill="#a1a1aa" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12">Tools I configure, wire, debug &amp; ship using AI guidance and docs:</text>
+
+  <g font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'DejaVu Sans Mono', monospace" font-size="10.2">
+    <rect x="44" y="114" width="112" height="24" rx="4" fill="#15151a" stroke="#27272a"/>
+    <text x="100" y="130" fill="#e4e4e7" text-anchor="middle">Next.js + TS</text>
+
+    <rect x="164" y="114" width="118" height="24" rx="4" fill="#15151a" stroke="#27272a"/>
+    <text x="223" y="130" fill="#e4e4e7" text-anchor="middle">Supabase + RLS</text>
+
+    <rect x="290" y="114" width="128" height="24" rx="4" fill="#15151a" stroke="#27272a"/>
+    <text x="354" y="130" fill="#e4e4e7" text-anchor="middle">ESP32 + BLE HID</text>
+  </g>
+  <text x="44" y="153" fill="#71717a" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'DejaVu Sans Mono', monospace" font-size="9.5">+ Local Ollama Workflows · Hyprland / Arch Linux · Bubblewrap</text>
+
+  <!-- Right Rail: Zero-AI Fundamentals -->
+  <rect x="490" y="56" width="444" height="108" rx="6" fill="#0d0d11" stroke="#27272a"/>
+  <circle cx="508" cy="75" r="3.5" fill="#f59e0b"/>
+  <text x="520" y="79" fill="#fafafa" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'DejaVu Sans Mono', monospace" font-size="11.5" font-weight="600">SOLO FUNDAMENTALS (ZERO-AI GRIND)</text>
+  <text x="508" y="99" fill="#a1a1aa" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12">Core subjects I am currently coding line-by-line on blank files:</text>
+
+  <g font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'DejaVu Sans Mono', monospace" font-size="10.2">
+    <rect x="508" y="114" width="122" height="24" rx="4" fill="#15151a" stroke="#f59e0b" stroke-opacity="0.45"/>
+    <text x="569" y="130" fill="#fde68a" text-anchor="middle">Python Core</text>
+
+    <rect x="638" y="114" width="128" height="24" rx="4" fill="#15151a" stroke="#f59e0b" stroke-opacity="0.45"/>
+    <text x="702" y="130" fill="#fde68a" text-anchor="middle">HTML5 + CSS3</text>
+
+    <rect x="774" y="114" width="114" height="24" rx="4" fill="#15151a" stroke="#27272a"/>
+    <text x="831" y="130" fill="#e4e4e7" text-anchor="middle">POSIX + Git</text>
+  </g>
+  <text x="508" y="153" fill="#71717a" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'DejaVu Sans Mono', monospace" font-size="9.5">Loops, Conditionals, Digit Logic, Box Model, Flexbox, B.Tech Sem 1</text>
+
+  <!-- Footer Principle Line -->
+  <line x1="26" y1="176" x2="934" y2="176" stroke="#18181d" stroke-width="1"/>
+  <text x="32" y="196" fill="#71717a" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'DejaVu Sans Mono', monospace" font-size="10.5">
+    RULE: <tspan fill="#d4d4d8">Use AI to ship ambitious systems early — never fake fluency or skip learning how the base works.</tspan>
+  </text>
+</svg>
